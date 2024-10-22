@@ -164,7 +164,7 @@ body {
     text-transform: uppercase;
 }
 
-.SocialMediaLinks a {
+/*.SocialMediaLinks a {
     margin: 0 10px;
     color: #f0f0f0;
     text-decoration: none;
@@ -173,8 +173,13 @@ body {
 
 .SocialMediaLinks a:hover {
     color: #1e90ff;
+}*/
+.SocialMediaLinks a img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
 }
-
 .Biography {
     margin: 40px auto;
     max-width: 800px;
