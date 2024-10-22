@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags for Responsiveness and SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fathalrhman Adam's Portfolio</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/article-styles.css">
-    <script src="../js/scripts.js" defer></script>
+    <title>Fathalrhman Adam</title>
+    
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/Styles.css">
+    
+    <!-- Google Fonts for Futuristic Look -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="Preloader">
+        <div id="Loader"></div>
+    </div>
+    
+    <!-- Header Section with Navigation and Search Bar -->
     <header>
-        <div class="container">
-            <div class="logo">
-                FA
+        <nav class="NavigationBar">
+            <div class="NavLeft">
+                <!-- Creative Dropdown Menu -->
+                <div class="Dropdown">
+                    <button class="DropBtn">Explore &#x25BC;</button>
+                    <div class="DropdownContent">
+                        <a href="../index.html#HomeSection">Home</a>
+                        <a href="../index.html#EducationSection">Education</a>
+                        <a href="../index.html#EventsSection">Events</a>
+                        <a href="../index.html#ExperienceSection">Experience</a>
+                        <a href="../index.html#PublicationsSection">Publications</a>
+                        <a href="../index.html#AwardsSection">Honors & Awards</a>
+                        <a href="../index.html#BlogsSection">Blogs</a>
+                        <a href="../index.html#contact">Contact Me</a>
+                        <a href="../assets/Resume.pdf">Resume</a>
+                    </div>
+                </div>
             </div>
-            <nav> 
-                <ul>
-                    <li><a href="../index.html#hero" class="active">Home</a></li>
-                    <li><a href="../index.html#about" class="nav-link">About</a></li>
-                    <li class="dropdown">
-                        <a href="../index.html#portfolio" class="nav-link">Portfolio</a>
-                        <div class="dropdown-content">
-                            <a href="../index.html#skills">Skills</a>
-                            <a href="../index.html#experience">Experience</a>
-                            <a href="../index.html#projects">Projects</a>
-                            <a href="../index.html#education">Education</a>
-                            <a href="../index.html#blog">Blog</a>
-                            <a href="../index.html#testimonials">Testimonials</a>
-                        </div>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!-- Added Dropdown Menu -->
-                </ul>
-            </nav>
-            
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Search">
-                <img src="../assets/images/search.svg" alt="Search Icon" class="search-icon">
+            <div class="NavRight">
+                <!-- Search Bar -->
+                <input type="text" id="SearchInput" placeholder="Search...">
             </div>
-        </div>
+        </nav>
     </header>
+
+    <!-- Neural Nexus Particle Animation Canvas -->
+    <canvas id="NeuralNexusCanvas"></canvas>
 
     <main>
         <section id="blog-post" lang="ar">
@@ -88,15 +95,20 @@
         
     </main>
     
-    <footer>
-        <div class="footer-content">
-            <p>2024 &copy;  فتح الرحمن آدم</p>
-            <div class="social-icons">
-                <a href="https://x.com/fathalrhman26" target="_blank"><img src="../assets/images/x.svg" alt="Twitter"></a>
-                <a href="https://www.linkedin.com/in/fathalrhman26" target="_blank"><img src="../assets/images/linkedin.svg" alt="LinkedIn"></a>
-                <a href="https://github.com/fathalrhman26" target="_blank"><img src="../assets/images/github.svg" alt="GitHub"></a>
-            </div>
+     <!-- Footer -->
+     <footer>
+        <p>&copy; 2024 Fathalrhman Adam. All rights reserved.</p>
+        <!-- Social Media Links -->
+        <div class="SocialMediaLinks">
+            <a href="https://x.com/fathalrhman26" target="_blank"><img src="../assets/images/x.svg" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/fathalrhman26" target="_blank"><img src="../assets/images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/fathalrhman26" target="_blank"><img src="../assets/images/github.svg" alt="GitHub"></a>
         </div>
     </footer>
+
+    <!-- Link to JavaScript File -->
+    <script src="../assets/js/Scripts.js"></script>
 </body>
 </html>
+
+
