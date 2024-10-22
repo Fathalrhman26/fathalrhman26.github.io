@@ -1,0 +1,417 @@
+/* Styles.css */
+
+/* Resetting default browser styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f0f0f0;
+    background-color: #0a0a0a;
+}
+
+/* Preloader Styles */
+#Preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0a0a0a;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Loader {
+    border: 16px solid #1a1a1a;
+    border-top: 16px solid #1e90ff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: Spin 2s linear infinite;
+}
+
+/* Loader Animation */
+@keyframes Spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Navigation Bar */
+.NavigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.NavLeft, .NavRight {
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown Menu */
+.Dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.DropBtn {
+    font-family: 'Orbitron', sans-serif;
+    background-color: transparent;
+    color: #f0f0f0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.DropBtn:hover, .DropBtn:focus {
+    color: #1e90ff;
+}
+
+.DropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    min-width: 160px;
+    z-index: 1;
+    transition: all 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.DropdownContent a {
+    color: #f0f0f0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.DropdownContent a:hover {
+    background-color: #218efc;
+    
+}
+
+.Dropdown:hover .DropdownContent {
+    display: block;
+}
+
+/* Search Bar */
+#SearchInput {
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #f0f0f0;
+    margin-left: 20px;
+}
+
+#SearchInput::placeholder {
+    color: #aaa;
+}
+
+/* Neural Nexus Particle Animation */
+#NeuralNexusCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Set to -1 to place it behind other content */
+}
+
+/* Home Section */
+.HomeContainer {
+    text-align: center;
+    padding: 50px 20px 50px 20px; /* Added top padding to account for fixed navbar */
+    background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+    animation: FadeIn 1s ease-in;
+}
+
+@keyframes FadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.ProfileImage {
+    /*width: 50%;*/
+    height: 50%;
+    border-radius: 70%;
+    /*animation: Rotate 20s linear infinite;*/
+}
+
+/*@keyframes Rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}*/
+
+.JobTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.SocialMediaLinks a {
+    margin: 0 10px;
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.SocialMediaLinks a:hover {
+    color: #1e90ff;
+}
+
+.Biography {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.Biography h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.Biography p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Communities and Interests */
+#CommunitiesInterests {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#CommunitiesInterests > div {
+    margin: 0 40px;
+}
+
+#CommunitiesInterests h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#CommunitiesInterests ul {
+    list-style: none;
+    padding: 0;
+}
+
+#CommunitiesInterests li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#CommunitiesInterests li::before {
+    content: '•';
+    color: #1e90ff;
+    position: absolute;
+    left: 0;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    
+    background-color: transparent;
+    animation: FadeInUp 1s ease;
+}
+
+@keyframes FadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*section:nth-child(even) {
+    background-color: #1a1a1a;
+}*/
+
+/* Specific Background Color for Events and Publications Sections */
+#EventsSection, #PublicationsSection, #BlogsSection {
+    background-color: #1a1a1a;
+}
+
+section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Education and Experience Items */
+.EducationItem, .ExperienceItem, .AwardsItem, .EventsItem {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.EducationItem:hover, .ExperienceItem:hover, .EventsItem:hover, .AwardsItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(30, 144, 255, 0.2);
+}
+
+.EducationItem h3, .ExperienceItem h3, .EventsItem h3, .AwardsItem h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.EducationItem p, .ExperienceItem p, .EventsItem p, .AwardsItem p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.EducationItem ul, .ExperienceItem ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.EducationItem li, .ExperienceItem li {
+    margin-bottom: 10px;
+}
+
+/* Blogs Section */
+.BlogItem {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.BlogItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(30, 144, 255, 0.2);
+}
+
+.BlogItem h3 a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.BlogItem p a{
+    color: #1e90ff;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 50px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 10px;
+    border: 2px solid #007BFF;
+    border-radius: 10px; /* More rounded corners */
+    background-color: transparent; /* Transparent background */
+    color: #007BFF; /* Sunflower color for the text */
+    font-size: 1.1rem; /* Larger text */
+    cursor: pointer;
+    font-family: cursive;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+form button:hover {
+    background: #0056b3;
+    color: #f0f0f0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Orbitron', sans-serif;
+    color: #f0f0f0;
+}
+
+footer .SocialMediaLinks {
+    margin-top: 10px;
+}
+
+footer .SocialMediaLinks a {
+    margin: 0 10px;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+footer .SocialMediaLinks a:hover {
+    color: #1e90ff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .NavigationBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .HomeContainer {
+        padding: 100px 20px 50px 20px;
+    }
+
+    .ProfileImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .JobTitle {
+        font-size: 22px;
+    }
+
+    #CommunitiesInterests {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #CommunitiesInterests > div {
+        margin: 20px 0;
+    }
+
+    .EducationItem, .ExperienceItem, .BlogItem {
+        margin: 20px;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
