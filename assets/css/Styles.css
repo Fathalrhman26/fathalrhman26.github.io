@@ -175,8 +175,9 @@ body {
     color: #1e90ff;
 }*/
 .SocialMediaLinks a img {
-    width: 24px;
-    height: 24px;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
     filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
 }
@@ -362,7 +363,7 @@ form button:hover {
 footer {
     background-color: #1a1a1a;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     font-size: 14px;
     font-family: 'Orbitron', sans-serif;
     color: #f0f0f0;
