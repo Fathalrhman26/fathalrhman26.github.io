@@ -1,210 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags for Responsiveness and SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fathalrhman's Portfolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="js/scripts.js" defer></script>
-    <!-- Google Fonts Import -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Fathalrhman Adam</title>
+    
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="assets/css/Styles.css">
+    
+    <!-- Google Fonts for Futuristic Look -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Preloader -->
+    <div id="Preloader">
+        <div id="Loader"></div>
+    </div>
+    
+    <!-- Header Section with Navigation and Search Bar -->
     <header>
-        <div class="container">
-            <div class="logo">FA</div>
-            <nav>
-                <ul>
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li class="dropdown">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                        <div class="dropdown-content">
-                            <a href="#skills">Skills</a>
-                            <a href="#experience">Experience</a>
-                            <a href="#projects">Projects</a>
-                            <a href="#education">Education</a>
-                            <a href="#blog">Blog</a>
-                            <a href="#testimonials">Testimonials</a>
-                        </div>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!-- Added Dropdown Menu -->
-
-                </ul>
-            </nav>
-            <!-- Added Search Bar -->
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Search">
-                <img src="assets/images/search.svg" alt="Search Icon" class="search-icon">
+        <nav class="NavigationBar">
+            <div class="NavLeft">
+                <!-- Creative Dropdown Menu -->
+                <div class="Dropdown">
+                    <button class="DropBtn">Explore &#x25BC;</button>
+                    <div class="DropdownContent">
+                        <a href="#HomeSection">Home</a>
+                        <a href="#EducationSection">Education</a>
+                        <a href="#EventsSection">Events</a>
+                        <a href="#ExperienceSection">Experience</a>
+                        <a href="#PublicationsSection">Publications</a>
+                        <a href="#AwardsSection">Honors & Awards</a>
+                        <a href="#BlogsSection">Blogs</a>
+                        <a href="#contact">Contact Me</a>
+                        <a href="assets/Resume.pdf">Resume</a>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="NavRight">
+                <!-- Search Bar -->
+                <input type="text" id="SearchInput" placeholder="Search...">
+            </div>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <img src="assets/images/profille.png" alt="Fathalrhman Adam" class="profile-image">
-        <h1>Welcome to My <span class="highlight">Portfolio</span></h1>
-        <p>I am a software engineer specialized in AI/ML, with a passion for creating innovative solutions.</p>
-        <button onclick="location.href='#contact'">Contact Me</button>
-    </section>
+    <!-- Neural Nexus Particle Animation Canvas -->
+    <canvas id="NeuralNexusCanvas"></canvas>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Fathalrhman Adam, a software engineer with a focus on machine learning and AI safety. With a background in software engineering and extensive experience in AI, I aim to create impactful solutions that drive innovation and safety in technology. I am passionate about open source and continuously learning to stay at the forefront of technology.</p>
-    </section>
-
-   <section id="portfolio">
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill-grid">
-            <div class="skill"><img src="assets/images/python.svg" alt="Python"></div>
-            <div class="skill"><img src="assets/images/scikitlearn.svg" alt="scikitlearn"></div>
-            <div class="skill"><img src="assets/images/numpy.svg" alt="NumPy"></div>
-            <div class="skill"><img src="assets/images/pandas.svg" alt="Pandas"></div>
-            <div class="skill"><img src="assets/images/tensorflow.svg" alt="TensorFlow.js"></div>
-            <div class="skill"><img src="assets/images/pytorch.svg" alt="pytorch"></div>
-            <div class="skill"><img src="assets/images/cplusplus.svg" alt="C++"></div>
-            <div class="skill"><img src="assets/images/javascript.svg" alt="JavaScript"></div>    
-            <div class="skill"><img src="assets/images/git.svg" alt="Git"></div>
-            <div class="skill"><img src="assets/images/github.svg" alt="GitHub"></div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-year">2021 - 2022</div>
-                <div class="timeline-content">
-                    <h3>Machine Learning Engineering Intern</h3>
-                    <h4>Shai for AI</h4>
-                    <ul>
-                        <li>Developed and optimized machine learning models for various projects.</li>
-                        <li>Collaborated with cross-functional teams to integrate AI solutions.</li>
-                        <li>Conducted research and implemented new algorithms.</li>
-                    </ul>
+    <!-- Main Content Wrapper -->
+    <main>
+        <!-- Home Section -->
+        <section id="HomeSection">
+            <div class="HomeContainer">
+                <img src="assets/images/ProfileImage.jpg" alt="Profile Picture" class="ProfileImage">
+                <h1 class="JobTitle">Reinforcement Learning (RL) & Robotics Enthusiast</h1>
+                <!-- Social Media Links -->
+                <div class="SocialMediaLinks">
+                    <a href="https://x.com/fathalrhman26" target="_blank"><img src="assets/images/x.svg" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/in/fathalrhman26" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://github.com/fathalrhman26" target="_blank"><img src="assets/images/github.svg" alt="GitHub"></a>
+                </div>
+                <!-- Biography -->
+                <div class="Biography">
+                    <h2>Biography</h2>
+                    <p>I'm <b>Fathalrhman Adam</b> a Software Engineer with a background in <b>Artificial Intelligence and Machine Learning</b>. I thrive on solving complex problems and building innovative solutions that make a positive impact on the world.</p>
+                </div>
+                <!-- AI Communities and Interests -->
+                <div id="CommunitiesInterests">
+                    <div>
+                        <h2>AI Communities</h2>
+                        <ul>
+                            <li><a href="https://deeplearningindaba.com/">Deep Learning Indaba </a></li>
+                            <li><a href="https://www.blackinai.org/">Black in AI</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Interests</h2>
+                        <ul>
+                            <li>Reinforcement Learning (RL) & Robotics Research</li>
+                            <li>AI Ethics & Governance Research</li>
+                            <li>Software Engineering</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-year">2021 - 2022</div>
-                <div class="timeline-content">
-                    <h3>Machine Learning Instructor</h3>
-                    <h4>IEEE Alneelain University Student Branch</h4>
-                    <ul>
-                        <li>Conducted workshops and training sessions on machine learning topics.</li>
-                        <li>Mentored students in their AI projects and research.</li>
-                        <li>Developed course materials and tutorials.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <h3>AI Based Recipe and Meal Planning App</h3>
-                <p>A mobile application that uses AI to suggest recipes and meal plans based on user preferences and dietary restrictions.</p>
-                <a href="https://github.com/Fathalrhman26/AI-Recipe-and-Meal-Planning">Navigate to the project in GitHub</a>
+        <!-- Education Section -->
+        <section id="EducationSection">
+            <h2>Education</h2>
+            <div class="EducationItem">
+                <h3>Neelain University <span>Sep 2016 – Oct 2024</span></h3>
+                <p>BSc in Software Engineering - Khartoum, Sudan</p>
             </div>
-            <div class="project-item">
-                <h3>All In Open Source Projects</h3>
-                <p>Contributions to various open source projects focused on AI and machine learning.</p>
-                <a href="https://credly.com/badges/610de851-1d93-4132-ac00-2daa6bcc02eb">check out my badge</a>
+            <div class="EducationItem">
+                <h3>European Innovation Academy <span>Dec 2018 – Jan 2019</span></h3>
+                <p>Diploma in Entrepreneurship and Innovation - Doha, Qatar</p>
+                <!--<ul>
+                    <li>Steered a startup team to secure a top 3 position at AIA 2019.</li>
+                    <li>Engaged in the HAG Consulting Accelerator Program.</li>
+                </ul>-->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-list">
-            <div class="education-item">
-                <div class="education-content">
-                    <h3>BSc of honors in Software Engineering</h3>
-                    <h4>Neelain University</h4>
-                    <p>Key Coursework: Software Design and Specification, Algorithms Analysis and Design, Software Testing and Verification, Software Engineering Ethics, Computer Networks and Security, Human and Computer Interaction (HCI), Project Management, Agile Project Management</p>
-                </div>
+        <!-- Events Section -->
+        <section id="EventsSection">
+            <h2>Events Organized</h2>
+            <div class="EventsItem">
+                <h3>IEEE R8 Sudanese Students and Young Professionals (SSYP2022)</h3>
+                <p>I Coordinated Exhabitions and Projects Teams on Fourth Industrial Revolution theme.</p>
             </div>
-            <div class="education-item">
-                <div class="education-content">
-                    <h3>Diploma in Entrepreneurship and Innovation</h3>
-                    <h4>European Innovation Academy</h4>
-                    <p>Experience Highlight: Served as Chief Technology Officer (CTO) at Wheelsonclick Startup during the Arab Innovation Academy (AIA) in Doha, Qatar, collaborating with top mentors and leading the development of the startup MVP.</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <div class="education-content">
-                    <h3>AGI Safety Fundamentals Governance Course</h3>
-                    <h4>AI Safety Quest</h4>
-                    <p>Focus Areas: AI Safety Principles, Governance Models, Ethical Implications of AGI</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="certification-list">
-            <div class="certification-item">
-                <h3>Travel Grant</h3>
-                <h4>Neelain University</h4>
-                <p>This prestigious grant recognized my outstanding contributions and potential in the field of software engineering and AI, providing me the opportunity to expand my knowledge globally.</p>
-                <div class="certificate-container">
-                    <a href="assets/images/Indaba-certificate.pdf" target="_blank" class="download-link">DeepLearning Indaba Certificate</a>
-                </div>
+        <!-- Experience Section -->
+        <section id="ExperienceSection">
+            <h2>Experience</h2>
+            <!-- CLENT Africa -->
+            <div class="ExperienceItem">
+                <h3>CLENT Africa <span>Sep 2024 – Present</span></h3>
+                <p>Research and Data Analyst - Remote</p>
+                <ul>
+                    <li>Coordinating renewable energy and climate change pilot projects.</li>
+                    <li>Conducting environmental health baseline studies influencing policies.</li>
+                    <li>Optimizing data collection protocols aligned with international standards.</li>
+                    <li>Forging strategic partnerships to broaden research capabilities.</li>
+                </ul>
             </div>
-            <div class="certification-item">
-                <h3>Fully Funded Scholarship</h3>
-                <h4>Arab Innovation Academy</h4>
-                <p>Awarded for demonstrating exceptional innovation and entrepreneurial skills, this scholarship allowed me to participate in one of the leading innovation programs in the Arab region.</p>
-                <div class="certificate-container">
-                    <a href="assets/images/AIA2019.pdf" target="_blank" class="download-link">Scholarship Certificate</a>
-                </div>
+            <!-- GitHub Digital Public Good -->
+            <div class="ExperienceItem">
+                <h3>GitHub Digital Public Good <span>May 2023 – Present</span></h3>
+                <p>Community Manager Trainee - Remote</p>
+                <ul>
+                    <li>Directing community engagement initiatives.</li>
+                    <li>Implementing community guidelines enhancing communication.</li>
+                    <li>Orchestrating workshops to foster collaboration.</li>
+                    <li>Aligning community strategies with project objectives.</li>
+                </ul>
             </div>
-    </section>
+            <!-- IEEE Sudan 
+            <div class="ExperienceItem">
+                <h3>IEEE Sudan <span>May 2022 – Aug 2022</span></h3>
+                <p>Project Coordinator - Hybrid</p>
+                <ul>
+                    <li>Led a team of 26 volunteers for the IEEE Region 8 Congress.</li>
+                    <li>Managed exhibitions on Fourth Industrial Revolution technologies.</li>
+                    <li>Developed time and stress management strategies.</li>
+                    <li>Strengthened team cohesion through personalized support.</li>
+                    <li>Resolved logistical challenges with innovative solutions.</li>
+                </ul>
+            </div>-->
+            <!-- Shai for AI -->
+            <div class="ExperienceItem">
+                <h3>Shai for AI <span>Jun 2021 – Mar 2022</span></h3>
+                <p>Senior Machine Learning Engineer Intern - Remote</p>
+                <ul>
+                    <li>Engineered advanced ML models using Python, PyTorch, TensorFlow.js.</li>
+                    <li>Streamlined data processing using NumPy, Scikit-Learn, Pandas.</li>
+                    <li>Developed Jupyter/Colab notebooks for model training.</li>
+                    <li>Architected production-ready pipelines for predictive engines.</li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- blogs Section -->
-    <section id="blog">
-        <h2>Blog & Articles</h2>
-        <div class="blog-list">
-            <div class="blog-item">
+        <!-- Publications Section -->
+        <section id="PublicationsSection">
+            <h2>Publications</h2>
+            <p>Coming soon.</p>
+        </section>
+
+        <!-- Honors and Awards Section -->
+        <section id="AwardsSection">
+            <h2>Honors & Awards</h2>
+            <div class="AwardsItem">
+                <h3>Travel Grant Recipient, Neelain University</h3>
+                <p>Awarded a grant to attend the Deep Learning Indaba Conference in Tunis, Tunisia.</p>
+            </div>
+            <div class="AwardsItem">
+                <h3>Fully Funded Scholarship, Arab Innovation Academy</h3>
+                <p>Granted a scholarship to study entrepreneurship and innovation in Doha, Qatar.</p>
+            </div>
+        </section>
+
+        <!-- Blogs Section -->
+        <section id="BlogsSection">
+            <h2>Latest Blogs</h2>
+            <div class="BlogItem">
                 <span class="blog-date">July 29, 2024 / Articles</span>
-                <h3>My Journey with the GitHub All In Africa Program: Reflections, Ambitions, and the Essence of Open Source</h3>
-                <p>my personal story of overcoming obstacles, embracing open-source innovation, and discovering the true power of community and collaboration.</p>
-                <a href="blogs/blog1.html" class="read-more">Read More →</a>
+                <h3><a href="blogs/blog1.html">My Journey with the GitHub All In Africa Program: Reflections, Ambitions, and the Essence of Open Source</a></h3>
+                <p>my personal story of overcoming obstacles, embracing open-source innovation, and discovering the true power of community and collaboration...<a href="blogs/blog1.html">read more </a></a></p>
             </div>
-        </div>
-    </section>
-   </section>
+            <!-- Add more blog summaries as needed -->
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSesMqmxx4FkKbZueXelZoSTT7VaeoRhkKCja08BK-4gBFTY2w/formResponse" method="POST">
-            <input type="text" name="entry.1176074512" placeholder="Your Name" required>
-            <input type="email" name="entry.1467512537" placeholder="Your Email" required>
-            <textarea name="entry.611608155" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <!-- Contact Me Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSesMqmxx4FkKbZueXelZoSTT7VaeoRhkKCja08BK-4gBFTY2w/formResponse" method="POST">
+                <input type="text" name="entry.1176074512" placeholder="Your Name" required>
+                <input type="email" name="entry.1467512537" placeholder="Your Email" required>
+                <textarea name="entry.611608155" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <p> 2024 Fathalrhman Adam &copy; All rights reserved </p>
-            <div class="social-icons">
-                <a href="https://x.com/fathalrhman26" target="_blank"><img src="assets/images/x.svg" alt="Twitter"></a>
-                <a href="https://www.linkedin.com/in/fathalrhman26" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
-                <a href="https://github.com/fathalrhman26" target="_blank"><img src="assets/images/github.svg" alt="GitHub"></a>
-            </div>
+        <p>&copy; 2024 Fathalrhman Adam. All rights reserved.</p>
+        <!-- Social Media Links -->
+        <div class="SocialMediaLinks">
+            <a href="https://x.com/fathalrhman26" target="_blank"><img src="assets/images/x.svg" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/fathalrhman26" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/fathalrhman26" target="_blank"><img src="assets/images/github.svg" alt="GitHub"></a>
         </div>
     </footer>
+
+    <!-- Link to JavaScript File -->
+    <script src="assets/js/Scripts.js"></script>
 </body>
 </html>
