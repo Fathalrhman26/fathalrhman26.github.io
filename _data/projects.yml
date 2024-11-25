@@ -1,0 +1,23 @@
+# _data/projects.yml
+
+- title: "Neural Nexus"
+  image: "/assets/images/neural_nexus.png"
+  description: "A particle animation canvas simulating neural connections for enhanced visual appeal."
+  technologies:
+    - HTML5
+    - CSS3
+    - JavaScript
+  live_link: "https://fathalrhman26.github.io/neural-nexus/"
+  source_code: "https://github.com/fathalrhman26/neural-nexus"
+
+- title: "AI Ethics Platform"
+  image: "/assets/images/ai_ethics.png"
+  description: "A platform dedicated to exploring and promoting ethical practices in AI development."
+  technologies:
+    - Ruby
+    - Jekyll
+    - Python
+  live_link: "https://fathalrhman26.github.io/ai-ethics/"
+  source_code: "https://github.com/fathalrhman26/ai-ethics"
+
+# Add more projects as needed

@@ -1,0 +1,562 @@
+/* assets/css/styles.css */
+
+/* ===========================
+   Resetting Default Styles
+   =========================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   General Styles
+   =========================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f0f0f0;
+    background-color: #0a0a0a;
+    line-height: 1.6;
+}
+
+/* ===========================
+   Preloader Styles
+   =========================== */
+#Preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0a0a0a;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Loader {
+    border: 16px solid #1a1a1a;
+    border-top: 16px solid #1e90ff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: Spin 2s linear infinite;
+}
+
+@keyframes Spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ===========================
+   Navigation Bar
+   =========================== */
+.NavigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.NavLeft, .NavRight {
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown Menu */
+.Dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.DropBtn {
+    font-family: 'Orbitron', sans-serif;
+    background-color: transparent;
+    color: #f0f0f0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.DropBtn:hover, .DropBtn:focus {
+    color: #1e90ff;
+}
+
+.DropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    min-width: 160px;
+    z-index: 1;
+    transition: all 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.DropdownContent a {
+    color: #f0f0f0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.DropdownContent a:hover {
+    background-color: #218efc;
+    border-radius: 8px;
+}
+
+.Dropdown:hover .DropdownContent {
+    display: block;
+}
+
+/* Search Bar */
+#SearchInput {
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #f0f0f0;
+    margin-left: 20px;
+}
+
+#SearchInput::placeholder {
+    color: #aaa;
+}
+
+/* ===========================
+   Neural Nexus Particle Animation
+   =========================== */
+#NeuralNexusCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Set to -1 to place it behind other content */
+}
+
+/* ===========================
+   Home Section
+   =========================== */
+.HomeContainer {
+    text-align: center;
+    padding: 100px 20px 50px 20px; /* Added top padding to account for fixed navbar */
+    background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+    animation: FadeIn 1s ease-in;
+    border-radius: 8px;
+}
+
+@keyframes FadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.ProfileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.JobTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Social Media Links */
+.SocialMediaLinks a img {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.SocialMediaLinks a img:hover {
+    transform: scale(1.1);
+}
+
+/* Biography */
+.Biography {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.Biography h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.Biography p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Communities and Interests */
+#CommunitiesInterests {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+#CommunitiesInterests > div {
+    margin: 20px;
+    min-width: 200px;
+}
+
+#CommunitiesInterests h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#CommunitiesInterests ul {
+    list-style: none;
+    padding: 0;
+}
+
+#CommunitiesInterests li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#CommunitiesInterests li::before {
+    content: '•';
+    color: #1e90ff;
+    position: absolute;
+    left: 0;
+}
+
+/* ===========================
+   Sections
+   =========================== */
+section {
+    padding: 80px 20px;
+    background-color: transparent;
+    animation: FadeInUp 1s ease;
+}
+
+@keyframes FadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Education and Experience Items */
+.EducationItem, .ExperienceItem, .AwardsItem, .EventsItem, .ProjectItem {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.EducationItem:hover, .ExperienceItem:hover, .EventsItem:hover, .AwardsItem:hover, .ProjectItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(30, 144, 255, 0.2);
+}
+
+.EducationItem h3, .ExperienceItem h3, .EventsItem h3, .AwardsItem h3, .ProjectItem h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.EducationItem p, .ExperienceItem p, .EventsItem p, .AwardsItem p, .ProjectItem p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.EducationItem ul, .ExperienceItem ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.EducationItem li, .ExperienceItem li {
+    margin-bottom: 10px;
+}
+
+/* Blogs Section */
+.BlogItem {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.BlogItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(30, 144, 255, 0.2);
+}
+
+.BlogItem h3 a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.BlogItem h3 a:hover {
+    color: #63b3ed;
+}
+
+.BlogItem p a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.BlogItem p a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#ContactSection {
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #aaa;
+}
+
+form button {
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #007BFF;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #0056b3;
+    color: #f0f0f0;
+}
+
+/* ===========================
+   Footer Styles
+   =========================== */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    font-family: 'Orbitron', sans-serif;
+    color: #f0f0f0;
+}
+
+footer .SocialMediaLinks {
+    margin-top: 10px;
+}
+
+footer .SocialMediaLinks a img {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+footer .SocialMediaLinks a img:hover {
+    transform: scale(1.1);
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+@media screen and (max-width: 768px) {
+    .NavigationBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .HomeContainer {
+        padding: 120px 20px 50px 20px;
+    }
+
+    .ProfileImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .JobTitle {
+        font-size: 22px;
+    }
+
+    #CommunitiesInterests {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #CommunitiesInterests > div {
+        margin: 20px 0;
+    }
+
+    .EducationItem, .ExperienceItem, .BlogItem, .ProjectItem {
+        margin: 20px;
+    }
+}
+
+/* ===========================
+   Smooth Scrolling
+   =========================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===========================
+   Additional Styles for Blog Posts
+   =========================== */
+.blog-list {
+    gap: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.blog-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px #4a4a4a;
+    border-radius: 20px;
+}
+
+.blog-date {
+    color: #c4c4c4;
+    font-size: 0.9em;
+}
+
+.blog-item h3 {
+    margin-top: 5px;
+}
+
+.blog-item p {
+    margin: 10px 0;
+    color: #b0b0b0;
+}
+
+.read-more {
+    color: #61dafb;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   Individual Blog Post Styles
+   =========================== */
+#blog-post {
+    padding: 50px 20px;
+}
+
+#blog-post[lang="ar"] {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-align: right;
+}
+
+#blog-post[lang="en"] {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    text-align: left;
+}
+
+#blog-post h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.read-in-alt-lang {
+    font-size: 0.9em;
+    color: #666;
+    text-decoration: none;
+}
+
+.read-in-alt-lang:hover {
+    text-decoration: underline;
+}
+
+#blog-post .blog-date {
+    font-size: 1em;
+    color: #c4c4c4;
+}
+
+#blog-post article {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.article-image {
+    width: 15%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+#blog-post h4 {
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#blog-post p {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: #61dafb;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

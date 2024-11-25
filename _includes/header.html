@@ -1,0 +1,21 @@
+<!-- _includes/header.html -->
+<header>
+    <nav class="NavigationBar">
+        <div class="NavLeft">
+            <!-- Dropdown Menu -->
+            <div class="Dropdown">
+                <button class="DropBtn">Explore &#x25BC;</button>
+                <div class="DropdownContent">
+                    {% for item in site.navigation %}
+                        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                    {% endfor %}
+                    <a href="{{ "/assets/Resume.pdf" | relative_url }}" target="_blank">Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="NavRight">
+            <!-- Search Bar -->
+            <input type="text" id="SearchInput" placeholder="Search...">
+        </div>
+    </nav>
+</header>

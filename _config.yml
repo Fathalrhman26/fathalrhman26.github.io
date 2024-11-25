@@ -1,0 +1,38 @@
+# _config.yml
+
+title: Fathalrhman Adam - Software Engineer
+description: >
+  A portfolio showcasing projects, skills, and experiences in software engineering, reinforcement learning, and robotics.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fathalrhman26.github.io" # the base hostname & protocol for your site
+
+# Social Media Links
+social:
+  twitter: "https://x.com/fathalrhman26"
+  linkedin: "https://www.linkedin.com/in/fathalrhman26"
+  github: "https://github.com/fathalrhman26"
+
+# Navigation Links
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+  - title: "Projects"
+    url: "/projects"
+  - title: "Skills"
+    url: "/skills"
+  - title: "Blog"
+    url: "/blog"
+  - title: "Contact"
+    url: "/contact"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Google Analytics (Replace with your tracking ID)
+google_analytics: UA-XXXXXXXXX-X
+
+# Permalink Structure
+permalink: /:categories/:year/:month/:day/:title/

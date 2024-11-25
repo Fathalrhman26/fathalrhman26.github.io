@@ -1,0 +1,20 @@
+# _data/skills.yml
+
+technical:
+  - name: "Python"
+    proficiency: 90
+  - name: "JavaScript"
+    proficiency: 85
+  - name: "Ruby"
+    proficiency: 80
+  - name: "React"
+    proficiency: 75
+  - name: "TensorFlow"
+    proficiency: 70
+
+soft:
+  - "Problem Solving"
+  - "Team Leadership"
+  - "Effective Communication"
+  - "Time Management"
+  - "Adaptability"

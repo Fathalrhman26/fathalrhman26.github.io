@@ -1,0 +1,46 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for Responsiveness and SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <!-- SEO Tags -->
+    {% seo %}
+
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+
+    <!-- Google Fonts for Futuristic Look -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ "/assets/images/favicon.png" | relative_url }}">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="Preloader">
+        <div id="Loader"></div>
+    </div>
+
+    <!-- Header Section with Navigation -->
+    {% include header.html %}
+
+    <!-- Neural Nexus Particle Animation Canvas -->
+    <canvas id="NeuralNexusCanvas"></canvas>
+
+    <!-- Main Content Wrapper -->
+    <main>
+        {{ content }}
+    </main>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Link to JavaScript File -->
+    <script src="{{ "/assets/js/scripts.js" | relative_url }}"></script>
+</body>
+</html>
