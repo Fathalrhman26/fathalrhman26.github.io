@@ -1,5 +1,5 @@
 {
-	"database-id": "169b6e632b7448529120599281265ac5",
+	"database-id": "1a74682309fe80d688cec0629cf5b9d0",
 	"author": "",
 	"tracking": {
 		"google-analytics": {
@@ -15,14 +15,14 @@
 	},
 	"google-search-console-html-tag": "",
 	"socials": {
-		"email": "",
-		"github": "",
+		"email": "mailto:fathalrhman26@gmail.com",
+		"github": "https://github.com/Fathalrhman26",
 		"googlescholar": "",
 		"semanticscholar": "",
 		"dblp": "",
 		"substack": "",
 		"facebook": "",
-		"twitter": "",
+		"twitter": "https://x.com/fathalrhman26",
 		"threads": "",
 		"instagram": "",
 		"mastodon": "",
@@ -30,15 +30,15 @@
 		"calendar": "",
 		"kofi": "",
 		"buy-me-a-coffee": "",
-		"this-github-repo": "https://github.com/nerdymomocat-templates/webtrotion-astro-notion-cms-website-blog"
+		"this-github-repo": ""
 	},
 	"custom-domain": "",
 	"base-path": "",
 	"giscus": {
-		"data-repo": "nerdymomocat-templates/webtrotion-astro-notion-cms-website-blog",
-		"data-repo-id": "R_kgDOK0FuUA",
+		"data-repo": "fathalrhman26/fathalrhman26.github.io",
+		"data-repo-id": "R_kgDON_lw8g",
 		"data-category": "Announcements",
-		"data-category-id": "DIC_kwDOK0FuUM4CbZ5A",
+		"data-category-id": "[ENTER CATEGORY ID HERE]",
 		"data-mapping": "pathname",
 		"data-input-position": "top",
 		"data-reactions-enabled": true
@@ -85,12 +85,12 @@
 				"dark": "255 255 255"
 			},
 			"link": {
-				"light": "85 123 118",
-				"dark": "199 200 203"
+				"light": "67 96 132",
+				"dark": "72 152 238"
 			},
 			"accent": {
-				"light": "203 41 65",
-				"dark": "41 188 136"
+				"light": "93 44 187",
+				"dark": "248 246 254"
 			},
 			"accent-2": {
 				"light": "17 17 17",
@@ -116,7 +116,7 @@
 	"enable-lightbox": true,
 	"menu-pages-collection": "main",
 	"heading-blocks": ["heading_1", "heading_2", "heading_3"],
-	"full-preview-collections": ["Stream"],
+	"full-preview-collections": ["Research"],
 	"hide-underscore-slugs-in-lists": true,
 	"home-page-slug": "",
 	"all-footnotes-page-slug": "_all-footnotes",
@@ -124,7 +124,7 @@
 		"columns": 1,
 		"excerpt": false,
 		"title-font-url": "https://fonts.googleapis.com/css2?family=Kreon:wght@500&display=swap",
-		"footnote-font-url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+		"footnote-font-url": "https://fonts.googleapis.com/css2?family=Geist+Mono:wght@600&display=swap"
 	},
 	"full-width-social-embeds": false,
 	"optimize-images": true,
